@@ -13,7 +13,7 @@ export default function Home() {
                 </a>
               </li>
               <li>
-                <a href="/about" className="text-blue-500 hover:underline">
+                <a href="/product/1" className="text-blue-500 hover:underline">
                   Product
                 </a>
               </li>
