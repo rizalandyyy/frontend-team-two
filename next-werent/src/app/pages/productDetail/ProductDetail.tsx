@@ -24,7 +24,7 @@ const ProductDetail: React.FC = () => {
     id: 1,
     name: "Premium Wireless Headphones",
     price: 299.99,
-    image: "/api/placeholder/400/400",
+    image: "/testimage.webp",
     description: "Experience premium sound quality with our latest wireless headphones. Featuring active noise cancellation, 30-hour battery life, and premium comfort padding. Perfect for music lovers and professionals alike."
   };
 
@@ -145,16 +145,16 @@ const ProductDetail: React.FC = () => {
         <div className="bg-white rounded-lg shadow-md p-6 mb-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Product Image */}
-            <div className="flex justify-center">
+            <div className="flex items-center justify-center">
               <img
                 src={product.image}
                 alt={product.name}
-                className="w-full max-w-md h-96 object-cover rounded-lg shadow-sm"
+                className="w-full max-w-md h-auto object-cover rounded-lg shadow-sm"
               />
             </div>
             
             {/* Product Info */}
-            <div className="space-y-4">
+            <div className="space-y-4 flex flex-col justify-center">
               <h1 className="text-3xl font-bold text-gray-900">{product.name}</h1>
               <p className="text-2xl font-semibold text-blue-600">${product.price}</p>
               <p className="text-gray-700 leading-relaxed">{product.description}</p>
