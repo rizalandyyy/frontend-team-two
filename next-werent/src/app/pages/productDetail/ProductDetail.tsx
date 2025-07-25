@@ -156,7 +156,7 @@ const ProductDetail: React.FC = () => {
             {/* Product Info */}
             <div className="space-y-4 flex flex-col justify-center">
               <h1 className="text-3xl font-bold text-gray-900">{product.name}</h1>
-              <p className="text-2xl font-semibold text-blue-600">${product.price}</p>
+              <p className="text-2xl font-semibold text-green-600">${product.price}</p>
               <p className="text-gray-700 leading-relaxed">{product.description}</p>
             </div>
           </div>
@@ -225,7 +225,7 @@ const ProductDetail: React.FC = () => {
                     type="text"
                     value={reviewForm.name}
                     onChange={(e) => setReviewForm({ ...reviewForm, name: e.target.value })}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-black"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 text-black"
                     required
                   />
                 </div>
@@ -237,7 +237,7 @@ const ProductDetail: React.FC = () => {
                   <select
                     value={reviewForm.rating}
                     onChange={(e) => setReviewForm({ ...reviewForm, rating: parseInt(e.target.value) })}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-black"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 text-black"
                   >
                     {[5, 4, 3, 2, 1].map((rating) => (
                       <option key={rating} value={rating}>
@@ -255,7 +255,7 @@ const ProductDetail: React.FC = () => {
                     value={reviewForm.comment}
                     onChange={(e) => setReviewForm({ ...reviewForm, comment: e.target.value })}
                     rows={4}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-black"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 text-black"
                     placeholder="Share your experience with this product..."
                     required
                   />
@@ -264,7 +264,7 @@ const ProductDetail: React.FC = () => {
                 <div className="flex space-x-3 pt-4">
                   <button
                     type="submit"
-                    className="flex-1 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg font-semibold transition-colors"
+                    className="flex-1 bg-green-600 hover:bg-green-700 text-white py-2 px-4 rounded-lg font-semibold transition-colors"
                   >
                     Submit Review
                   </button>
