@@ -89,7 +89,7 @@ const LoginForm: React.FC = () => {
             value={formData.email}
             onChange={handleChange}
             error={errors.email}
-            placeholder="your@email.com"
+            placeholder="Enter your email"
             required
           />
           
@@ -100,7 +100,8 @@ const LoginForm: React.FC = () => {
             value={formData.password}
             onChange={handleChange}
             error={errors.password}
-            placeholder="••••••••"
+            // placeholder="••••••••"
+            placeholder="Enter your password"
             required
           />
           
