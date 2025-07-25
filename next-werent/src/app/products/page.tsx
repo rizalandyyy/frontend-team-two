@@ -1,9 +1,26 @@
-import React from 'react';
+'use client';
+
+import React, { useState } from 'react';
 import MainLayout from '@/components/layout/MainLayout';
 import ProductList from '@/components/product/ProductList';
+import CustomDropdown from '@/components/ui/CustomDropdown';
 import { products } from '@/lib/data';
 
 export default function ProductsPage() {
+  const [sortOption, setSortOption] = useState('newest');
+  
+  const sortOptions = [
+    { value: 'newest', label: 'Latest Arrivals' },
+    { value: 'price-low', label: 'Price: Low to High' },
+    { value: 'price-high', label: 'Price: High to Low' },
+    { value: 'popular', label: 'Most Popular' }
+  ];
+
+  const handleSortChange = (value: string) => {
+    setSortOption(value);
+    // Here you would implement the actual sorting logic
+  };
+  
   return (
     <MainLayout>
       <div className="container mx-auto px-4 py-8">
@@ -15,16 +32,13 @@ export default function ProductsPage() {
         </div>
         
         {/* Sort Options */}
-        <div className="flex flex-wrap justify-end items-center mb-8 p-4 rounded-lg">
-          <div>
-            <span className="text-gray-700 mr-2">Sort by:</span>
-            <select className="border rounded-md px-3 py-1 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-500">
-              <option value="newest">Latest Arrivals</option>
-              <option value="price-low">Price: Low to High</option>
-              <option value="price-high">Price: High to Low</option>
-              <option value="popular">Most Popular</option>
-            </select>
-          </div>
+        <div className="flex flex-wrap justify-end items-center mb-2 p-4 border-gray-100">
+          <CustomDropdown 
+            options={sortOptions} 
+            defaultValue={sortOption}
+            onChange={handleSortChange}
+            label="Sort by:"
+          />
         </div>
         
         {/* Products Grid */}
