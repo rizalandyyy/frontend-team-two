@@ -130,7 +130,7 @@ const LoginForm: React.FC = () => {
             className="w-full"
             disabled={isLoading}
           >
-            {isLoading ? 'Signing in...' : 'Sign In'}
+            {isLoading ? 'Logging in...' : 'Login'}
           </Button>
         </div>
       </form>
@@ -139,7 +139,7 @@ const LoginForm: React.FC = () => {
         <p className="text-sm text-gray-600">
           Don't have an account?{' '}
           <Link href="/auth/signup" className="text-green-600 hover:text-green-500 font-medium">
-            Sign up
+            Register
           </Link>
         </p>
       </div>

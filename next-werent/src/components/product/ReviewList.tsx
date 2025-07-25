@@ -59,7 +59,7 @@ const ReviewList: React.FC<ReviewListProps> = ({ reviews: initialReviews }) => {
     setReviews(prev => [newReview, ...prev]);
     
     // Show success toast
-    toast.success('Review submitted successfully!');
+    toast.success('Thank you for sharing your experience!');
     
     // Close modal and reset form
     handleCloseModal();
@@ -81,7 +81,7 @@ const ReviewList: React.FC<ReviewListProps> = ({ reviews: initialReviews }) => {
       setReviews(prev => prev.filter(review => review.id !== reviewToDelete));
       
       // Show success toast
-      toast.success('Review deleted successfully!');
+      toast.success('Feedback removed successfully!');
       
       // Close modal and reset reviewToDelete
       setIsDeleteModalOpen(false);
@@ -94,8 +94,8 @@ const ReviewList: React.FC<ReviewListProps> = ({ reviews: initialReviews }) => {
       <Toaster position="top-center" />
       
       <div className="flex justify-between items-center mb-6">
-        <h2 className="text-2xl font-bold">Customer Reviews</h2>
-        <Button onClick={handleOpenModal} variant="primary">Write a Review</Button>
+        <h2 className="text-2xl font-bold">Client Testimonials</h2>
+        <Button onClick={handleOpenModal} variant="primary">Share Your Experience</Button>
       </div>
 
       {reviews.length > 0 ? (
@@ -105,17 +105,17 @@ const ReviewList: React.FC<ReviewListProps> = ({ reviews: initialReviews }) => {
           ))}
         </div>
       ) : (
-        <p className="text-gray-500 italic">No reviews yet. Be the first to review this product!</p>
+        <p className="text-gray-500 italic">No testimonials yet. Be the first to share your experience with this exquisite piece!</p>
       )}
 
       {/* Review Modal */}
       {isModalOpen && (
         <div className="fixed inset-0 flex items-center justify-center z-50">
           <div className="bg-white rounded-lg shadow-xl p-6 w-full max-w-md mx-4 border-2 border-gray-200">
-            <h3 className="text-xl font-semibold mb-4">Write a Review</h3>
+            <h3 className="text-xl font-semibold mb-4">Share Your Experience</h3>
             <form className="space-y-4" onSubmit={handleSubmit}>
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
                 <input 
                   type="text" 
                   name="name"
@@ -141,19 +141,19 @@ const ReviewList: React.FC<ReviewListProps> = ({ reviews: initialReviews }) => {
                 </select>
               </div>
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-1">Your Review</label>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Your Feedback</label>
                 <textarea 
                   name="comment"
                   value={formData.comment}
                   onChange={handleInputChange}
                   rows={4} 
                   className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
-                  placeholder="Share your experience with this product..."
+                  placeholder="Tell us about your experience with this garment..."
                   required
                 />
               </div>
               <div className="flex space-x-3 pt-2">
-                <Button type="submit" variant="primary" className="flex-1">Submit</Button>
+                <Button type="submit" variant="primary" className="flex-1">Submit Feedback</Button>
                 <Button type="button" variant="secondary" className="flex-1" onClick={handleCloseModal}>Cancel</Button>
               </div>
             </form>
@@ -165,10 +165,10 @@ const ReviewList: React.FC<ReviewListProps> = ({ reviews: initialReviews }) => {
       {isDeleteModalOpen && (
         <div className="fixed inset-0 flex items-center justify-center z-50">
           <div className="bg-white rounded-lg shadow-xl p-6 w-full max-w-md mx-4 border-2 border-gray-200">
-            <h3 className="text-xl font-semibold mb-4">Delete Review</h3>
-            <p className="mb-6">Are you sure you want to delete this review? This action cannot be undone.</p>
+            <h3 className="text-xl font-semibold mb-4">Remove Feedback</h3>
+            <p className="mb-6">Are you sure you want to remove this testimonial? This action cannot be reversed.</p>
             <div className="flex space-x-3">
-              <Button type="button" variant="danger" className="flex-1" onClick={handleConfirmDelete}>Delete</Button>
+              <Button type="button" variant="danger" className="flex-1" onClick={handleConfirmDelete}>Remove</Button>
               <Button type="button" variant="secondary" className="flex-1" onClick={handleCancelDelete}>Cancel</Button>
             </div>
           </div>

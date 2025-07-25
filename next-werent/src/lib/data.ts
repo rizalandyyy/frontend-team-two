@@ -3,31 +3,31 @@ import { Product, Review } from '../types';
 export const products: Product[] = [
   {
     id: 1,
-    name: "Premium Wireless Headphones",
+    name: "Luxury Evening Gown",
     price: 299.99,
     image: "/testimage.webp",
-    description: "Experience premium sound quality with our latest wireless headphones. Featuring active noise cancellation, 30-hour battery life, and premium comfort padding. Perfect for music lovers and professionals alike."
+    description: "Exquisite evening gown with intricate beadwork and sequin details. Elegant design with a flattering silhouette. Perfect for formal events, wedding receptions, or gala dinners."
   },
   {
     id: 2,
-    name: "Professional DSLR Camera",
-    price: 1299.99,
+    name: "Premium Formal Suit",
+    price: 199.99,
     image: "/testimage.webp",
-    description: "Capture stunning photos and videos with this professional-grade DSLR camera. Features a 24.2MP sensor, 4K video recording, and advanced autofocus system."
+    description: "Premium formal suit crafted from high-quality materials with impeccable tailoring. Available in classic black. Ideal for formal occasions, weddings, or important business presentations."
   },
   {
     id: 3,
-    name: "Ultrabook Laptop",
-    price: 1499.99,
+    name: "Modern Kebaya",
+    price: 249.99,
     image: "/testimage.webp",
-    description: "Powerful and lightweight ultrabook with the latest processor, 16GB RAM, 512GB SSD, and stunning 4K display. Perfect for professionals on the go."
+    description: "Contemporary kebaya with traditional elements. Made from premium fabrics with beautiful embroidery details. Perfect for weddings, graduation ceremonies, or other formal events."
   },
   {
     id: 4,
-    name: "Smart Home Hub",
-    price: 199.99,
+    name: "Premium Batik",
+    price: 149.99,
     image: "/testimage.webp",
-    description: "Control your entire smart home with this central hub. Compatible with all major smart home devices and voice assistants."
+    description: "Premium batik featuring exclusive patterns on high-quality silk. Comfortable to wear while maintaining an elegant appearance. Suitable for formal or semi-formal occasions."
   }
 ];
 
@@ -35,48 +35,48 @@ export const reviews: Record<number, Review[]> = {
   1: [
     {
       id: 1,
-      name: "John Doe",
+      name: "Anisa Wijaya",
       rating: 5,
-      comment: "Amazing sound quality! The noise cancellation works perfectly.",
+      comment: "This gown is absolutely stunning! The quality of the fabric and the beadwork details are exquisite. I received countless compliments when I wore it to my friend's wedding.",
       date: "2024-01-15"
     },
     {
       id: 2,
-      name: "Sarah Smith",
+      name: "Dian Permata",
       rating: 4,
-      comment: "Great headphones, very comfortable for long listening sessions.",
+      comment: "An elegant gown that's comfortable to wear. The sizing was perfect and the delivery was right on schedule.",
       date: "2024-01-10"
     },
     {
       id: 3,
-      name: "Mike Johnson",
+      name: "Ratna Sari",
       rating: 5,
-      comment: "Best purchase I've made this year. Highly recommended!",
+      comment: "Renting this gown was absolutely worth it! The condition was like new and the price was very reasonable.",
       date: "2024-01-08"
     }
   ],
   2: [
     {
       id: 1,
-      name: "Emily Chen",
+      name: "Budi Santoso",
       rating: 5,
-      comment: "Excellent camera! The image quality is outstanding.",
+      comment: "Exceptional quality suit! It was perfect for my formal event. Many people asked where I rented such an impressive suit.",
       date: "2024-01-20"
     },
     {
       id: 2,
-      name: "David Wilson",
+      name: "Andi Pratama",
       rating: 4,
-      comment: "Great camera for both photography and videography.",
+      comment: "Beautiful suit with impeccable tailoring. The fit was perfect and the rental service was outstanding.",
       date: "2024-01-18"
     }
   ],
   3: [
     {
       id: 1,
-      name: "Alex Rodriguez",
+      name: "Maya Indah",
       rating: 5,
-      comment: "Super fast and lightweight. Battery life is amazing!",
+      comment: "The modern kebaya is absolutely beautiful! The embroidery details are exquisite and the fabric was comfortable to wear all day. Perfect for my graduation ceremony.",
       date: "2024-01-22"
     }
   ],
@@ -85,14 +85,14 @@ export const reviews: Record<number, Review[]> = {
       id: 1,
       name: "Jessica Lee",
       rating: 4,
-      comment: "Easy to set up and works with all my smart devices.",
+      comment: "The batik ensemble is elegant and comfortable to wear. The pattern is unique and I received many compliments at my office event.",
       date: "2024-01-25"
     },
     {
       id: 2,
       name: "Robert Brown",
-      rating: 3,
-      comment: "Good product but the app could use some improvements.",
+      rating: 5,
+      comment: "The quality of this premium batik is extraordinary. The fabric is smooth and the design is captivating. I will definitely rent again.",
       date: "2024-01-23"
     }
   ]

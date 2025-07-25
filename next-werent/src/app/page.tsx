@@ -15,13 +15,13 @@ export default function Home() {
       {/* Hero Section */}
       <section className="bg-green-700 text-white py-16">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">Rent Premium Products</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">Elevate Your Style</h1>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Access high-quality products without the commitment of ownership. Rent what you need, when you need it.
+            Make a statement at your special events without the commitment. Experience our luxury attire collection, impeccably maintained for your most memorable occasions.
           </p>
           <Link href="/products">
             <Button variant="secondary" size="lg">
-              Browse Products
+              Explore Collection
             </Button>
           </Link>
         </div>
@@ -31,7 +31,7 @@ export default function Home() {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center mb-8">
-            <h2 className="text-3xl font-bold text-gray-800">Featured Products</h2>
+            <h2 className="text-3xl font-bold text-gray-800">Featured Collection</h2>
             <Link href="/products" className="text-green-600 hover:text-green-700 font-medium">
               View All
             </Link>
@@ -43,33 +43,33 @@ export default function Home() {
       {/* How It Works */}
       <section className="py-16">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">How It Works</h2>
+          <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">The Experience</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center p-6">
               <div className="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                 1
               </div>
-              <h3 className="text-xl font-semibold mb-3">Browse Products</h3>
+              <h3 className="text-xl font-semibold mb-3">Select Your Statement Piece</h3>
               <p className="text-gray-600">
-                Explore our wide range of premium products available for rent.
+                Browse our exquisite collection of premium attire, from elegant gowns and formal suits to traditional ensembles crafted by renowned designers.
               </p>
             </div>
             <div className="text-center p-6">
               <div className="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                 2
               </div>
-              <h3 className="text-xl font-semibold mb-3">Rent What You Need</h3>
+              <h3 className="text-xl font-semibold mb-3">Customize Your Timeline</h3>
               <p className="text-gray-600">
-                Select your rental period and complete the checkout process.
+                Choose your ideal rental duration and complete your reservation with our seamless, secure payment process.
               </p>
             </div>
             <div className="text-center p-6">
               <div className="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                 3
               </div>
-              <h3 className="text-xl font-semibold mb-3">Enjoy & Return</h3>
+              <h3 className="text-xl font-semibold mb-3">Shine & Return</h3>
               <p className="text-gray-600">
-                Receive your product, enjoy it, and return it when your rental period ends.
+                Receive your impeccably prepared garment, make an unforgettable impression at your event, then simply return it when your moment has passed.
               </p>
             </div>
           </div>

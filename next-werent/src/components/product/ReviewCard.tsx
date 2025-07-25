@@ -29,7 +29,7 @@ const ReviewCard: React.FC<ReviewCardProps> = ({ review, onDelete }) => {
           <button 
             onClick={() => onDelete(review.id)} 
             className="text-red-500 hover:text-red-700 transition-colors"
-            aria-label="Delete review"
+            aria-label="Remove testimonial"
           >
             <FaTrash size={14} />
           </button>

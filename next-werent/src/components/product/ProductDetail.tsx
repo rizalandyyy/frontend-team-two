@@ -36,6 +36,16 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ product, reviews }) => {
             <p className="text-gray-700">{product.description}</p>
           </div>
           
+          <div className="mb-6">
+            <h2 className="text-xl font-semibold mb-2">Rental Details</h2>
+            <ul className="text-gray-700 list-disc pl-5 space-y-2">
+              <li>Available in multiple sizes (S, M, L, XL)</li>
+              <li>Minimum rental period: 3 days</li>
+              <li>Professional dry cleaning service included</li>
+              <li>Complimentary delivery and collection service</li>
+            </ul>
+          </div>
+          
           <div className="flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0">
             <Button variant="primary" className="w-full md:w-auto">
               Rent Now

@@ -17,10 +17,10 @@ const Navbar: React.FC = () => {
         
         <div className="flex space-x-3">
           <Link href="/auth/login">
-            <Button variant="outline" size="sm">Sign In</Button>
+            <Button variant="outline" size="sm">Login</Button>
           </Link>
           <Link href="/auth/signup">
-            <Button variant="primary" size="sm">Sign Up</Button>
+            <Button variant="primary" size="sm">Register</Button>
           </Link>
         </div>
       </div>
