@@ -3,7 +3,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import MainLayout from '@/components/layout/MainLayout';
 import ProductList from '@/components/product/ProductList';
-import Button from '@/components/ui/Button';
 import { products } from '@/lib/data';
 
 export default function Home() {
@@ -13,16 +12,16 @@ export default function Home() {
   return (
     <MainLayout>
       {/* Hero Section */}
-      <section className="bg-green-700 text-white py-16">
+      <section className=" text-white py-16">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">Elevate Your Style</h1>
-          <p className="text-xl mb-8 max-w-2xl mx-auto">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gray-800">Elevate Your Style</h1>
+          <p className="text-xl mb-8 max-w-2xl mx-auto text-gray-800">
             Make a statement at your special events without the commitment. Experience our luxury attire collection, impeccably maintained for your most memorable occasions.
           </p>
           <Link href="/products">
-            <Button variant="secondary" size="lg">
+            <button className="px-6 py-3 text-lg rounded-lg font-semibold transition-colors focus:outline-none focus:ring-2 bg-green-600 hover:bg-green-800 text-white focus:ring-green-500">
               Explore Collection
-            </Button>
+            </button>
           </Link>
         </div>
       </section>

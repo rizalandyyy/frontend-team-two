@@ -3,7 +3,6 @@
 import React from 'react';
 import Link from 'next/link';
 import SearchBar from '../ui/SearchBar';
-import Button from '../ui/Button';
 
 const Navbar: React.FC = () => {
   return (
@@ -17,10 +16,14 @@ const Navbar: React.FC = () => {
         
         <div className="flex space-x-3">
           <Link href="/auth/login">
-            <Button variant="outline" size="sm">Login</Button>
+            <button className="px-3 py-1 text-sm rounded-lg font-semibold transition-colors focus:outline-none focus:ring-2 bg-transparent border border-green-600 text-green-600 hover:bg-green-50 focus:ring-green-500">
+              Login
+            </button>
           </Link>
           <Link href="/auth/signup">
-            <Button variant="primary" size="sm">Register</Button>
+            <button className="px-3 py-1 text-sm rounded-lg font-semibold transition-colors focus:outline-none focus:ring-2 bg-green-600 hover:bg-green-700 text-white focus:ring-green-00">
+              Register
+            </button>
           </Link>
         </div>
       </div>
