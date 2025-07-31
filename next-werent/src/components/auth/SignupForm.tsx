@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import Button from '../ui/Button';
 import Input from '../ui/Input';
+import { signUpCredentials } from '@/lib/action';
 
 const SignupForm: React.FC = () => {
   const router = useRouter();
